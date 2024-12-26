@@ -93,11 +93,6 @@
       "icon": "icon-flask"
     },
     {
-      "name": "关于",
-      "link": "/about",
-      "icon": "icon-ghost"
-    },
-    {
       "name": "友链",
       "link": "/friends",
       "icon": "icon-hearts"
