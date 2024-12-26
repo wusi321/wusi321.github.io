@@ -27,19 +27,19 @@
       {
         "name": "bilibili",
         "icon": "icon-bilibili",
-        "url": "https://space.bilibili.com/3546706348084176",
+        "url": "https://space.bilibili.com",
         "color": "rgb(245, 154, 155)"
       },
       {
         "name": "Email",
-        "icon": "icon-mail",
+        "icon": "mymail",
         "url": "mailto:19589917063@163.com",
         "color": "rgb(150, 215, 201)"
       },
       {
         "name": "Zhihu",
         "icon": "icon-zhihu",
-        "url": "https://www.zhihu.com/people/wen-dao-81-2-70",
+        "url": "https://www.zhihu.com",
         "color": "rgb(42, 147, 213)"
       },
       {
@@ -49,7 +49,7 @@
         "color": "rgb(106,90,205)"
       }
     ],
-    "yiyan": "装作一个白日梦想家，然后征服全世界。"
+    "yiyan": "emm没什么好说的。"
   },
   "color": {
     "accent": [
@@ -118,7 +118,7 @@
     "serverURL": "https://waline-1-t8619760.deta.app/"
   },
   "sponsor": {
-    "wechat": "https://s2.loli.net/2024/08/03/6lXu4rHghkCmofV.jpg"
+    "wechat": "emm"
   },
   "analytics": {
     "enable": false,
