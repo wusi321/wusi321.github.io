@@ -1,6 +1,6 @@
 {
   "site": {
-    "url": "https://drowsyindra.github.io",
+    "url": "https://wusi321.github.io",
     "title": "博客",
     "description": "这是一个有理想的人走过的漫长道路",
     "keywords": "Kunyi,blog,dream,indra,博客,逐梦",
@@ -9,14 +9,14 @@
     "appleTouchIcon": "/apple-touch-icon.png"
   },
   "author": {
-    "name": "Kunyi",
+    "name": "emm",
     "twitterId": "@lxchapu",
     "avatar": "/img/avatar.jpg"
   },
   "hero": {
-    "name": "Kunyi",
+    "name": "emm",
     "bio": "一个为理想痴狂实干的疯子",
-    "description": "理想是追随稚晖君,欢迎一同学习",
+    "description": "长风破浪会有时，直挂云帆济沧海",
     "socials": [
       {
         "name": "Github",
@@ -33,7 +33,7 @@
       {
         "name": "Email",
         "icon": "icon-mail",
-        "url": "mailto:1162137506@qq.com",
+        "url": "mailto:19589917063@163.com",
         "color": "rgb(150, 215, 201)"
       },
       {
