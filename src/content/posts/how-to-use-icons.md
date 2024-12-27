@@ -1,7 +1,7 @@
 ---
 title: 如何在 Gyoza 中使用图标？
 date: 2024-05-08T10:54:27.000Z
-tags: [Icon]
+tags: [教程, 得学]
 category: 教程
 comments: true
 ---
