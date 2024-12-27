@@ -27,12 +27,12 @@
       {
         "name": "bilibili",
         "icon": "icon-bilibili",
-        "url": "https://space.bilibili.com",
+        "url": "https://space.bilibili.com/3546774390180405?spm_id_from=333.1007.0.0",
         "color": "rgb(245, 154, 155)"
       },
       {
         "name": "Email",
-        "icon": "mymail",
+        "icon": "icon-mail",
         "url": "mailto:19589917063@163.com",
         "color": "rgb(150, 215, 201)"
       },
