@@ -1,25 +1,28 @@
-import { useAtom } from 'jotai'
-import { searchPanelOpenAtom } from '@/store/searchPanel'
-import appConfig from '@/config.json'
-import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react'
-import '@docsearch/css'
-import { RootPortal } from './RootPortal'
+import { useAtom } from 'jotai';
+import { searchPanelOpenAtom } from '@/store/searchPanel';
+import appConfig from '@/config.json';
+import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react';
+import '@docsearch/css';
+import { RootPortal } from './RootPortal';
+import React, { RefObject, useRef } from 'react';
 
 export function SearchPanel() {
-  const [isOpen, setIsOpen] = useAtom(searchPanelOpenAtom)
+  const [isOpen, setIsOpen] = useAtom(searchPanelOpenAtom);
+  const searchButtonRef: RefObject<HTMLButtonElement> = useRef(null);
 
   const onOpen = () => {
-    setIsOpen(true)
-  }
+    setIsOpen(true);
+  };
   const onClose = () => {
-    setIsOpen(false)
-  }
+    setIsOpen(false);
+  };
 
   useDocSearchKeyboardEvents({
     isOpen,
     onOpen,
     onClose,
-  })
+    searchButtonRef
+  });
 
   return (
     isOpen && (
@@ -33,5 +36,5 @@ export function SearchPanel() {
         />
       </RootPortal>
     )
-  )
-}
+  );
+}    
