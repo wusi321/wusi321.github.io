@@ -4,14 +4,12 @@ import appConfig from '@/config.json';
 import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react';
 import '@docsearch/css';
 import { RootPortal } from './RootPortal';
-// 调整后的导入方式
 import { useRef } from'react';
-type RefObject = React.RefObject;
 
 export function SearchPanel() {
     const [isOpen, setIsOpen] = useAtom(searchPanelOpenAtom);
-    // 创建 searchButtonRef
-    const searchButtonRef: RefObject<HTMLButtonElement> = useRef(null);
+    // 正确使用泛型，指定为 HTMLButtonElement
+    const searchButtonRef = useRef<HTMLButtonElement>(null);
 
     const onOpen = () => {
         setIsOpen(true);
