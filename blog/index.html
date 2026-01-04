@@ -95,7 +95,7 @@
     </div>
     <div class="body">
       
-  <div class="wall wall-category--plain">
+  <div class="wall wall-category">
     <div class="wall-main">
       <div class="wall-category-title">
         <div class="title-icon"
@@ -104,7 +104,7 @@
       </div>
       <div class="wall-category-description"></div>
       <div class="wall-category-tags">
-        <div id="tags-outer"></div>
+        <div id="tags-outer"><canvas width="500" height="500" id="tagCanvas"><ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdowm/" rel="tag">markdowm</a><span class="tag-list-count">1</span></li></ul><canvas></div>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@
     </div>
     <div class="post__foot">
       <div class="post-tags">
-  
+  <a href="/tags/markdowm/" class="post-tag">#markdowm</a>
 
 </div>
     </div>
@@ -208,7 +208,7 @@
                  height="20px"
                  width="20px"
                  src="/images/icon/icon-link+.svg" />
-            <a class="foot-link" href="mailto:example@email.com?subject=申请http://example.com的友链">申请友链</a>
+            <a class="foot-link" href="mailto:19589917063@163.com?subject=申请http://example.com的友链">申请友链</a>
           </div>
         
       
@@ -326,6 +326,11 @@
 </div>
 
     
+      <script src="https://unpkg.com/js-polyfills@0.1.43/es6.js"></script>
+      <script id="MathJax-script"
+              async
+              src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    
     
       <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
       <script type="text/javascript">
@@ -341,6 +346,35 @@
     
     <script src="/js/copy-code.js"></script>
     
+  
+    <script type="text/javascript"
+            charset="utf-8"
+            src="/js/tagcanvas.min.js"></script>
+    <script type = "text/javascript">
+        window.onload = function() {
+            try {
+                TagCanvas.Start('tagCanvas', '', {
+                    outlineThickness: 1,
+                    maxSpeed: 0.03,
+                    // freezeActive: true,
+                    // freezeDecel: true,
+                    textColour: null,
+                    textColour: null,
+                    outlineColour: "#aaa",
+                    weight: true,
+                    padding: 4,
+                    // clickToFront: 200,
+                    fadIn: 200,
+                    // pinchZoom: true,
+                    wheelZoom: false,
+                    initial: [0.1, -0.03]
+                });
+            } catch (e) {
+                // something went wrong, hide the canvas container
+                document.getElementById('tags-outer').style.display = 'none';
+            }
+        };
+    </script>
   
 
   </body>

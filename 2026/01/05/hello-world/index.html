@@ -60,7 +60,7 @@
     
     
   <link rel="stylesheet" type="text/css" href="/css/post.css"/>
-  
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css"/>
 
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
@@ -206,6 +206,8 @@
 
     
     
+      <div id="gitalk-container"></div>
+    
   </div>
 
     </div>
@@ -264,7 +266,7 @@
                  height="20px"
                  width="20px"
                  src="/images/icon/icon-link+.svg" />
-            <a class="foot-link" href="mailto:example@email.com?subject=申请http://example.com的友链">申请友链</a>
+            <a class="foot-link" href="mailto:19589917063@163.com?subject=申请http://example.com的友链">申请友链</a>
           </div>
         
       
@@ -382,6 +384,11 @@
 </div>
 
     
+      <script src="https://unpkg.com/js-polyfills@0.1.43/es6.js"></script>
+      <script id="MathJax-script"
+              async
+              src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    
     
       <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
       <script type="text/javascript">
@@ -397,6 +404,15 @@
     
     <script src="/js/copy-code.js"></script>
     
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+  const param = JSON.parse('{"enable":true,"owner":null,"admin":null,"repo":null,"clientID":null,"clientSecret":null,"distractionFreeMode":false,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN"}')
+  let title = location.pathname.substr(0, 50); 
+  param.id = title
+  const gitalk = new Gitalk(param)
+  gitalk.render('gitalk-container')
+</script>
+
   
 
   </body>
