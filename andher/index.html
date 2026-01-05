@@ -6,7 +6,7 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
     <title>
       
-        markdowm | 半杯凉白开
+        我和她的故事 | 半杯凉白开
       
     </title>
     <meta name="description" content=""/>
@@ -59,9 +59,7 @@
           href='/css/layout.css'/>
     
     
-  <link rel="stylesheet"
-        type="text/css"
-        href="/css/category.css" />
+  <link rel="stylesheet" type="text/css" href="/css/category.css" />
 
   <meta name="generator" content="Hexo 8.1.1"></head>
   <body>
@@ -103,13 +101,26 @@
     </div>
     <div class="body">
       
-  <div class="tag-page-title">#markdowm</div>
+  <div class="wall wall-category">
+    <div class="wall-main">
+      <div class="wall-category-title">
+        <div class="title-icon"
+             style="background-image: url(/images/icon/icon-blog.svg)"></div>
+        我和她的故事
+      </div>
+      <div class="wall-category-description">人先欠着,暂时还没找到</div>
+      <div class="wall-category-tags">
+        <div id="tags-outer"><canvas width="500" height="500" id="tagCanvas"><a href="/tags/%E5%85%B3%E4%BA%8E%E5%A5%B9/" style="font-size: 14px;">关于她</a><canvas></div>
+      </div>
+    </div>
+  </div>
   <div class="post-list">
     
+      
   
   <div class="post-card">
     <div class="post__head">
-      <a href="/2026/01/05/markdown/" class="post-title hover-line">markdown</a>
+      <a href="/2026/01/05/%E5%85%B3%E4%BA%8E%E5%A5%B9/" class="post-title hover-line">关于她</a>
       
     </div>
     <div class="post__body">
@@ -118,13 +129,14 @@
     </div>
     <div class="post__foot">
       <div class="post-tags">
-  <a href="/tags/markdowm/" class="post-tag">#markdowm</a>
+  <a href="/tags/%E5%85%B3%E4%BA%8E%E5%A5%B9/" class="post-tag">#关于她</a>
 
 </div>
     </div>
   </div>
 
 
+    
     
   </div>
 
@@ -322,5 +334,36 @@
     
     <script src="/js/copy-code.js"></script>
     
+  
+    <script type="text/javascript"
+            charset="utf-8"
+            src="/js/tagcanvas.min.js"></script>
+    <script type = "text/javascript">
+        window.onload = function() {
+            try {
+                TagCanvas.Start('tagCanvas', '', {
+                    outlineThickness: 1,
+                    maxSpeed: 0.03,
+                    // freezeActive: true,
+                    // freezeDecel: true,
+                    textColour: null,
+                    textColour: null,
+                    outlineColour: "#aaa",
+                    weight: true,
+                    padding: 4,
+                    // clickToFront: 200,
+                    fadIn: 200,
+                    // pinchZoom: true,
+                    wheelZoom: false,
+                    initial: [0.1, -0.03]
+                });
+            } catch (e) {
+                // something went wrong, hide the canvas container
+                document.getElementById('tags-outer').style.display = 'none';
+            }
+        };
+    </script>
+  
+
   </body>
 </html>
