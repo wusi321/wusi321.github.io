@@ -172,8 +172,8 @@
   margin: auto;
 }
 .radio-skin,
-.radio-skin--article,
-.radio-skin--app,
+.radio-skin--ROBOCON,
+.radio-skin--MYSELF,
 .radio-skin--event {
   height: 100%;
   width: 2px;
@@ -182,8 +182,8 @@
   transition: all 0.4s ease;
 }
 .radio-skin::after,
-.radio-skin--article::after,
-.radio-skin--app::after,
+.radio-skin--ROBOCON::after,
+.radio-skin--MYSELF::after,
 .radio-skin--event::after {
   transition: all 0.4s ease;
   display: block;
@@ -199,22 +199,22 @@
   top: 22px;
   box-shadow: 1px 0 5px rgba(0,0,0,0.2);
 }
-.radio-skin--article::after {
+.radio-skin--ROBOCON::after {
   border-color: #ee936c;
 }
-#radio-article:checked+.radio-skin--article {
+#radio-ROBOCON:checked+.radio-skin--ROBOCON {
   background-color: #ee936c;
 }
-#radio-article:checked+.radio-skin--article::after {
+#radio-ROBOCON:checked+.radio-skin--ROBOCON::after {
   background-color: #ee936c;
   top: -2px;
 }
-.timeline-item-article .line-anchor::after,
-.timeline-item-article--hidden .line-anchor::after {
+.timeline-item-ROBOCON .line-anchor::after,
+.timeline-item-ROBOCON--hidden .line-anchor::after {
   background-color: #ee936c;
 }
-.timeline-item-article .line-date-tag,
-.timeline-item-article--hidden .line-date-tag {
+.timeline-item-ROBOCON .line-date-tag,
+.timeline-item-ROBOCON--hidden .line-date-tag {
   background-color: #ee936c;
 }
 /*
@@ -222,22 +222,22 @@
     font-weight: bold;
   }
   */
-.radio-skin--app::after {
+.radio-skin--MYSELF::after {
   border-color: #60a465;
 }
-#radio-app:checked+.radio-skin--app {
+#radio-MYSELF:checked+.radio-skin--MYSELF {
   background-color: #60a465;
 }
-#radio-app:checked+.radio-skin--app::after {
+#radio-MYSELF:checked+.radio-skin--MYSELF::after {
   background-color: #60a465;
   top: -2px;
 }
-.timeline-item-app .line-anchor::after,
-.timeline-item-app--hidden .line-anchor::after {
+.timeline-item-MYSELF .line-anchor::after,
+.timeline-item-MYSELF--hidden .line-anchor::after {
   background-color: #60a465;
 }
-.timeline-item-app .line-date-tag,
-.timeline-item-app--hidden .line-date-tag {
+.timeline-item-MYSELF .line-date-tag,
+.timeline-item-MYSELF--hidden .line-date-tag {
   background-color: #60a465;
 }
 /*
