@@ -174,7 +174,8 @@
 .radio-skin,
 .radio-skin--ROBOCON,
 .radio-skin--MYSELF,
-.radio-skin--event {
+.radio-skin--event,
+.radio-skin--notbook {
   height: 100%;
   width: 2px;
   border-radius: 1px;
@@ -184,7 +185,8 @@
 .radio-skin::after,
 .radio-skin--ROBOCON::after,
 .radio-skin--MYSELF::after,
-.radio-skin--event::after {
+.radio-skin--event::after,
+.radio-skin--notbook::after {
   transition: all 0.4s ease;
   display: block;
   height: 20px;
@@ -261,6 +263,29 @@
 }
 .timeline-item-event .line-date-tag,
 .timeline-item-event--hidden .line-date-tag {
+  background-color: #568dc4;
+}
+/*
+  .timeline-item-app, .timeline-item-event {
+    font-weight: bold;
+  }
+  */
+.radio-skin--notbook::after {
+  border-color: #568dc4;
+}
+#radio-notbook:checked+.radio-skin--notbook {
+  background-color: #568dc4;
+}
+#radio-notbook:checked+.radio-skin--notbook::after {
+  background-color: #568dc4;
+  top: -2px;
+}
+.timeline-item-notbook .line-anchor::after,
+.timeline-item-notbook--hidden .line-anchor::after {
+  background-color: #568dc4;
+}
+.timeline-item-notbook .line-date-tag,
+.timeline-item-notbook--hidden .line-date-tag {
   background-color: #568dc4;
 }
 /*
