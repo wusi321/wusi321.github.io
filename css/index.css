@@ -271,22 +271,22 @@
   }
   */
 .radio-skin--notbook::after {
-  border-color: #568dc4;
+  border-color: #ff0;
 }
 #radio-notbook:checked+.radio-skin--notbook {
-  background-color: #568dc4;
+  background-color: #ff0;
 }
 #radio-notbook:checked+.radio-skin--notbook::after {
-  background-color: #568dc4;
+  background-color: #ff0;
   top: -2px;
 }
 .timeline-item-notbook .line-anchor::after,
 .timeline-item-notbook--hidden .line-anchor::after {
-  background-color: #568dc4;
+  background-color: #ff0;
 }
 .timeline-item-notbook .line-date-tag,
 .timeline-item-notbook--hidden .line-date-tag {
-  background-color: #568dc4;
+  background-color: #ff0;
 }
 /*
   .timeline-item-app, .timeline-item-event {
