@@ -176,7 +176,8 @@
 .radio-skin--ROBOCON,
 .radio-skin--MYSELF,
 .radio-skin--event,
-.radio-skin--notbook {
+.radio-skin--notbook,
+.radio-skin--JIAOCHENG {
   height: 100%;
   width: 2px;
   border-radius: 1px;
@@ -188,7 +189,8 @@
 .radio-skin--ROBOCON::after,
 .radio-skin--MYSELF::after,
 .radio-skin--event::after,
-.radio-skin--notbook::after {
+.radio-skin--notbook::after,
+.radio-skin--JIAOCHENG::after {
   transition: all 0.4s ease;
   display: block;
   height: 20px;
@@ -312,6 +314,29 @@
 .timeline-item-notbook .line-date-tag,
 .timeline-item-notbook--hidden .line-date-tag {
   background-color: #f069f4;
+}
+/*
+  .timeline-item-app, .timeline-item-event {
+    font-weight: bold;
+  }
+  */
+.radio-skin--JIAOCHENG::after {
+  border-color: #000;
+}
+#radio-JIAOCHENG:checked+.radio-skin--JIAOCHENG {
+  background-color: #000;
+}
+#radio-JIAOCHENG:checked+.radio-skin--JIAOCHENG::after {
+  background-color: #000;
+  top: -2px;
+}
+.timeline-item-JIAOCHENG .line-anchor::after,
+.timeline-item-JIAOCHENG--hidden .line-anchor::after {
+  background-color: #000;
+}
+.timeline-item-JIAOCHENG .line-date-tag,
+.timeline-item-JIAOCHENG--hidden .line-date-tag {
+  background-color: #000;
 }
 /*
   .timeline-item-app, .timeline-item-event {
