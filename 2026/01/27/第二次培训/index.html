@@ -123,7 +123,8 @@
             
           </div>
         
-        <h2 id="第二次寒假培训"><a href="#第二次寒假培训" class="headerlink" title="第二次寒假培训"></a>第二次寒假培训</h2><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
+        <h2 id="第二次寒假培训"><a href="#第二次寒假培训" class="headerlink" title="第二次寒假培训"></a>第二次寒假培训</h2><hr>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><ul>
 <li><a href="#%E7%9B%AE%E5%BD%95">目录</a></li>
 <li><a href="#%E5%89%8D%E8%A8%80">前言</a></li>
 <li><a href="#%E9%9C%80%E8%A6%81%E4%BA%86%E8%A7%A3%E7%9A%84%E6%A6%82%E5%BF%B5">一些需要了解的概念</a></li>
@@ -145,12 +146,13 @@
 <ul>
 <li>常见指令集架构(x86,ARM)<br>不需要仔细了解 但是得知道<br><strong>x86</strong><br>分64位以及32位(X86-64,X86-32)<br>常见的PC电脑上的操作系统<br>你的windos11,企业服务器,<br>(特点就是高功耗,性能释放)</li>
 </ul>
+<hr>
 <p><strong>ARM</strong><br>你的手机的安卓,ios,鸿蒙(???) ,上位机,下位机<br>(典型特点就是低电压低功耗,小型设备,性能以及能效可观)</p>
 <blockquote>
 <p>为什么我要给你们提这东西?这是我在大一下学期接机器人项目下载软件遇到的实际问题,你在浏览器搜索某个软件官网下载东西,会经常看到windox版(分为x86-64位,x86-32位),linux版(x86-64,<strong>arm64</strong>,安卓)</p>
 </blockquote>
 <ul>
-<li>上位机??下位机<br>下位机:单片机(C51,STM32,esp32,MSPM0等等)<br>特点:写代码 -&gt; 烧录 -&gt; 运行<br>缺点:无法实时调试<br>上位机:(树莓派,香橙派,泰山派,荔枝派,RDK X5,瑞芯微,以及英伟达出的jetson nano)<br>特点:性能强劲,功耗低,成本高,相当于小型电脑主机or服务器<br>可烧录系统:ubuntu,centos,deepin等,我们接触的最多的是ubuntu(20.04)–ARM架构,删除了好多东西,只保留了基本的系统,以及一些常用的软件<br>算力较高:(除少数比较老版本的一些外,其余算力都可达4tops以上)</li>
+<li><strong>上位机??下位机</strong><br>下位机:单片机(C51,STM32,esp32,MSPM0等等)<br>特点:写代码 -&gt; 烧录 -&gt; 运行<br>缺点:无法实时调试<br>上位机:(树莓派,香橙派,泰山派,荔枝派,RDK X5,瑞芯微,以及英伟达出的jetson nano)<br>特点:性能强劲,功耗低,成本高,相当于小型电脑主机or服务器<br>可烧录系统:ubuntu,centos,deepin等,我们接触的最多的是ubuntu(20.04)–ARM架构,删除了好多东西,只保留了基本的系统,以及一些常用的软件<br>算力较高:(除少数比较老版本的一些外,其余算力都可达4tops以上)</li>
 <li>树莓派:4GB RAM,1.5GHz四核CPU</li>
 <li>香橙派:4GB RAM,1.2GHz四核CPU</li>
 <li>泰山派:4GB RAM,1.5GHz四核CPU</li>
@@ -163,9 +165,10 @@
 <ul>
 <li><a target="_blank" rel="noopener" href="https://ubuntu.com/">ubuntu官网</a></li>
 <li><a target="_blank" rel="noopener" href="https://www.quanxiaoha.com/">犬小哈教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.quanxiaoha.com/linux-command/linux-shutdown.html">犬小哈教程-linux常用命令</a><br>现在,请大家打开vmware虚拟机创建的ubuntu虚拟机<br>新建一个终端窗口(ctrl+alt+t)(也可以在ubuntu桌面点击终端图标)<br>插一嘴ubuntu 是一个基于Debian的Linux发行版,所以很多指令都是和Debian相关的<br>然后linux的终端和windows的命令行(CMD,PowerShell是windows的命令行,cmd和powershell都是windows的命令行,但是命令写法和cmd有不同,可以问ai,powershell是微软出的,功能更加强大)是不同的,linux的终端是一个文本界面,你可以在终端中输入指令,然后终端会执行这些指令,并将结果显示在终端中<br>‘’’bash<br>sudo -i # 切换到root用户<br>exit # 退出root用户<br>sudo apt update # 更新软件源<br>sudo apt upgrade # 升级已安装的软件<br>sudo apt install 软件名 # 安装软件<br>sudo apt remove 软件名 # 删除软件<br>nano 文件名 # 编辑文件 ctrl+o写入,回车,ctrl+x退出,另一个叫vi,但是我不常用<br>chmod +x 文件名 # 给文件添加可执行权限<br>.&#x2F;文件名 # 执行文件<br>‘’’</li>
+<li><a target="_blank" rel="noopener" href="https://www.quanxiaoha.com/linux-command/linux-shutdown.html">犬小哈教程-linux常用命令</a><br>现在,请大家打开vmware虚拟机创建的ubuntu虚拟机<br>新建一个终端窗口(ctrl+alt+t)(也可以在ubuntu桌面点击终端图标)<br>插一嘴ubuntu 是一个基于Debian的Linux发行版,所以很多指令都是和Debian相关的<br>然后linux的终端和windows的命令行(CMD,PowerShell是windows的命令行,cmd和powershell都是windows的命令行,但是命令写法和cmd有不同,可以问ai,powershell是微软出的,功能更加强大)是不同的,linux的终端是一个文本界面,你可以在终端中输入指令,然后终端会执行这些指令,并将结果显示在终端中</li>
 </ul>
-<p>你们会用到的<br>‘’’bash<br>cd 目录名 # 切换目录<br>ls # 查看目录下文件<br>pwd # 查看当前目录<br>mkdir 目录名 # 创建目录<br>rmdir 目录名 # 删除目录<br>ifconfig # 查看网络配置 (ip地址等) windows下使用ipconfig<br>sudo pip install 软件名 # 安装软件<br>sudo python3 python文件.py # 执行python文件</p>
+<p>‘’’python<br>sudo -i # 切换到root用户<br>exit # 退出root用户<br>sudo apt update # 更新软件源<br>sudo apt upgrade # 升级已安装的软件<br>sudo apt install 软件名 # 安装软件<br>sudo apt remove 软件名 # 删除软件<br>nano 文件名 # 编辑文件 ctrl+o写入,回车,ctrl+x退出,另一个叫vi,但是我不常用<br>chmod +x 文件名 # 给文件添加可执行权限<br>.&#x2F;文件名 # 执行文件<br>‘’’</p>
+<p>你们会用到的<br>‘’’python<br>cd 目录名 # 切换目录<br>ls # 查看目录下文件<br>pwd # 查看当前目录<br>mkdir 目录名 # 创建目录<br>rmdir 目录名 # 删除目录<br>ifconfig # 查看网络配置 (ip地址等) windows下使用ipconfig<br>sudo pip install 软件名 # 安装软件<br>sudo python3 python文件.py # 执行python文件</p>
 <p>‘’’</p>
 <h3 id="ros"><a href="#ros" class="headerlink" title="ros"></a>ros</h3><p>然后,我之前让你们在wsl安装过ros,</p>
 <ul>
