@@ -646,16 +646,28 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
                 <p>承担程序设计</p>
               
                 <a target="_blank" rel="noopener" href="https://github.com/wusi321/robocon" class="section__head">
-                  <div class="section-title">八自由度四足仿生机械狗的设计与开发</div>
-                  <div class="section-title-des">SolidWorks,CNC 加工,无刷电机选型,CAN 总线,嵌入式系统,ROS,机器人仿真,视觉集成</div>
+                  <div class="section-title">多自由度四轮足仿生机械狗的设计与开发</div>
+                  <div class="section-title-des">SolidWorks,CNC加工,16关节电机(12DOF+4轮足),NVIDIA Orin Nano,深度学习,ROS2,仿真</div>
                 </a>
-                <p>机械 + 硬件 + 嵌入式 + 上位机全栈参与负责</p><p>项目简介：</p><p>从零设计并实现一台八自由度串联结构四足仿生机械狗，完整覆盖机械结构设计、硬件选型、底层通信、上位机控制、仿真与系统集成，构建具备扩展性的机器人软硬件架构。</p><p>个人职责与成果：</p><p>机械与结构层</p><p>使用 SolidWorks 完成整机与腿部八自由度串联结构建模，设计关节布局、安装结构与装配方案</p><p>选用铝合金材料，输出工程图并对接 CNC 加工，参与实物装配与结构优化</p><p>执行与硬件层</p><p>基于负载与力矩分析完成 关节电机选型，设计执行机构方案</p><p>参与整机硬件选型与系统搭建，包括主控板、分电板、电池、电机与供电架构</p><p>完成整机电源规划与 CAN 通信架构设计</p><p>嵌入式与通信层</p><p>实现 CAN 总线多电机通信，完成电机控制与状态反馈调试</p><p>参与底层控制逻辑设计，支持遥控与上位机双控制模式</p><p>上位机与系统层</p><p>基于 ROS 搭建上位机控制框架，实现运动控制接口与数据交互</p><p>集成视觉模块，完成视觉信息在控制系统中的接入与验证</p><p>仿真与验证</p><p>结合机械模型与控制逻辑进行运动学与动作仿真</p><p>验证结构可行性与控制链路完整性，为实机调试提供依据</p><p>项目亮点：</p><p>覆盖 机械设计 → 硬件选型 → 嵌入式通信 → ROS 上位机 → 仿真验证 的完整机器人开发链路</p><p>具备跨学科系统整合能力，可参与推进复杂工程项目落地</p>
+                <p>机械 + 硬件 + 嵌入式 + 上位机全栈参与负责</p><p>项目简介：</p><p>从零设计并实现一台多自由度四轮足仿生机械狗，采用 CNC 加工铝合金机身，搭载 16 关节电机(12 自由度 + 4 轮足)，以 NVIDIA Orin Nano 为主控，经历从 8 自由度四足下位机控制到上位机(Linux 嵌入式深度学习 + ROS2 + 仿真)的完整迭代演进。</p><p>个人职责与成果：</p><p>机械与结构层</p><p>使用 SolidWorks 完成整机与腿部多自由度结构建模，设计关节布局、安装结构与装配方案</p><p>选用铝合金材料，输出工程图并对接 CNC 加工，参与实物装配与结构优化</p><p>硬件与执行层</p><p>基于负载与力矩分析完成 16 关节电机选型与执行机构方案设计</p><p>参与整机硬件系统搭建，完成电源规划与 CAN 通信架构设计</p><p>嵌入式与下位机控制(第一阶段)</p><p>实现 CAN 总线多电机通信，完成电机控制与状态反馈调试</p><p>参与底层控制逻辑设计，支持遥控与上位机双控制模式</p><p>上位机与智能系统(第二阶段)</p><p>选用 NVIDIA Orin Nano 作为主控，搭建 Linux 嵌入式深度学习环境</p><p>基于 ROS2 搭建上位机控制框架，实现运动控制接口与数据交互</p><p>集成 YOLO 视觉模块，完成目标检测与识别，将感知信息接入控制系统</p><p>仿真与验证</p><p>结合机械模型与控制逻辑进行运动学与动作仿真</p><p>验证结构可行性与控制链路完整性，为实机调试提供依据</p><p>项目亮点：</p><p>经历了 下位机控制(STM32+CAN) → Linux嵌入式深度学习(Orin Nano) → ROS2+仿真的完整技术迭代</p><p>覆盖 机械设计 → CNC加工 → 硬件选型 → 嵌入式通信 → 深度学习 → ROS2 → 仿真验证 全链路</p>
               
                 <a href="https://wusi321.github.io/" class="section__head">
-                  <div class="section-title">个人博客的搭建与部署</div>
+                  <div class="section-title">个人博客的搭建与部署（Hexo框架）</div>
                   <div class="section-title-des">基于HEXO框架,Markdown,HTML,CSS,JavaScript</div>
                 </a>
                 <p>负责搭建个人博客，使用 HEXO 框架生成静态网页</p><p>利用 Markdown 语法编写博客文章，发布在 GitHub Pages 上</p><p>设计并实现自定义的 CSS 样式，美化博客页面布局</p><p>集成 Disqus 评论系统，提升用户互动与博客互动性</p>
+              
+                <a target="_blank" rel="noopener" href="https://scunf.github.io/" class="section__head">
+                  <div class="section-title">SCuNF博客——基于Valaxy的静态博客</div>
+                  <div class="section-title-des">Valaxy,Vue3,TypeScript,Vite,UnoCSS,SSG,GitHubPages</div>
+                </a>
+                <p>独立搭建第二套技术博客，探索现代前端静态站点生成框架</p><p>项目简介：</p><p>基于 Valaxy(v0.27.0)+ valaxy-theme-yun 主题构建，采用 Vue 3 + TypeScript + Vite 技术栈，以 SSG 模式生成纯静态站点并部署于 GitHub Pages</p><p>个人职责与成果：</p><p>框架选型与技术实践</p><p>从 HEXO 迁移至 Valaxy 生态，学习 Vue 3 组件化开发与 TypeScript 类型系统</p><p>使用 UnoCSS + SCSS 实现原子化 CSS 与自定义样式覆盖</p><p>基于 pnpm 进行依赖管理，显著优化安装速度与磁盘占用</p><p>自定义开发</p><p>编写自定义 Vue 组件(Footer/GirlItem 等)，实现 components/ 目录自动注册</p><p>设计 project/projects 自定义布局，满足项目展示页面需求</p><p>配置中英文双语言切换(locales/)，拓展国际化能力</p><p>工程化与部署</p><p>配置 GitHub Actions 自动化 CI/CD，Push 后自动构建 SSG 并部署至 gh-pages</p><p>集成 PWA(Service Worker)实现离线访问，提升移动端体验</p><p>配置 RSS 订阅(atom.xml)与站内搜索，完善站点功能</p><p>项目亮点：</p><p>掌握现代前端 SSG 框架(Valaxy/Vite/Vue3)全链路开发能力，与 HEXO 传统方案形成互补</p><p>具备自动化部署与 PWA 离线化实践经验</p>
+              
+                <a target="_blank" rel="noopener" href="https://github.com/wusi321/aupt" class="section__head">
+                  <div class="section-title">AUPT——统一Linux包管理调度工具</div>
+                  <div class="section-title-des">Python,分层架构,插件化设计,Linux包管理,CLI工具</div>
+                </a>
+                <p>独立设计并开发一款跨发行版的统一 Linux 包管理命令行工具</p><p>项目简介：</p><p>设计并实现 AUPT(Advanced Unified Package Tool),解决 Linux 多发行版包管理命令不统一的问题</p><p>采用分层架构 + 插件化设计,支持自动识别发行版并调度对应包管理器(apt/pacman/dnf/zypper/flatpak/snap)</p><p>个人职责与成果：</p><p>核心架构设计</p><p>设计 dispatcher(命令分发)、distro_detector(发行版检测)、package_resolver(包解析)等核心模块</p><p>基于抽象基类设计 7 个包管理器后端(apt/pacman/dnf/zypper/snap/flatpak),实现统一接口</p><p>实现多级自动 fallback 选择策略(系统原生 → flatpak → snap)</p><p>功能实现</p><p>实现版本控制支持,兼容 == 和 @ 两种版本指定语法,含自动 fallback 机制</p><p>开发镜像源自动优化功能,支持测速、自动切换最快镜像、自动修改配置并更新索引</p><p>实现系统诊断命令(aupt doctor),可检测包管理器状态、网络连通性与镜像源健康度</p><p>工程化实践</p><p>基于 pyproject.toml 规范配置 console_script 入口,实现一键安装全局可用</p><p>编写 Shell 安装/卸载脚本,支持用户级与系统级两种安装模式</p><p>项目亮点：</p><p>从需求分析到架构设计再到编码实现全流程独立完成,具备完整的软件工程能力</p><p>深入理解多种 Linux 包管理器底层差异,体现跨平台适配与系统集成能力</p>
               
             
           </div>
